@@ -15,6 +15,16 @@ fun TampilSiswa(
     )
 
     Scaffold(modifier = Modifier,
-
+        {
+            TopAppBar(
+                title = { Text(stringResource(id = R.string.detail), color = Color.White) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(id = R.color.purple_500)),
+            )
+        }) { isiRuang ->
+        Column(
+            modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.SpaceBetween
+        )
+        }
     }
 }
