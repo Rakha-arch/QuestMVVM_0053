@@ -19,6 +19,9 @@ fun SiswaApp(
             navController = navController,
             startDestination = Navigasi.Formulir.name,
 
+            modifier = Modifier.padding(isiRuang)){
 
+
+        }
     }
 }
